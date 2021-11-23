@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="CSS/registration_style.css">
+
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Philippine Identification System</a>
+    </nav>
+    <h3>Instructions</h3>
+    <p id="instruction"> <strong>Please fill out all required information which will be reflected in the PhilSys registry and PhilID card. We enjoin you to provide only true
+      and accurate information to avoid the penalties as provided in the law.</strong>
+    </p>
+    <p id="instructions">Punan ang lahat ng kailangang impormasyon para sa inyong PhilSys registry at PhilID. Ibigay lamang ang too at tamang impormasyon upang maiwasan
+      ang mga parusang ayon sa batas.
+    </p>
+    
+    <div class="container">
+      <form class="form-control" action="#" method="post">
+        <div class="row">
+          <!-- First Column -->
+
+          <div class="column first" id="">
+            
+            <div class="row"> 
+              <label for="name">First Name (Panangalan)</label>
+              <input type="text" name="name" value="" placeholder="">
+            </div>
+
+            <div class="form-control"> 
+              <label for="gender">Sex (Kasarian)</label>
+              <br>
+              <label for="">Male (Lalaki)</label> <input type="radio" name="gender" >
+              <label for="">Female (Babae)</label> <input type="radio" name="gender" >
+            </div>
+            <br>
+            <br>
+
+            <div class="row">
+              <div class="d-flex">
+                <label for="birthdate">Date of Birth</label>
+                <label for="age" id="#Age">Age</label> 
+              </div>
+
+              <div>
+                <input type="date" name="birthdate" value="">
+                <input type="number" name="age" value="" placeholder="">
+              </div>
+              
+            </div>
+            <div>
+              <P>Permanent Address</P>
+            </div>
+            
+            <div class="row" id="country_bansa">
+              <label for="country">Country (Bansa)</label>
+              <select name="country" form="">
+                <option value="Philippines" selected>Philippines</option>
+              </select>
+            </div>
+            
+          </div>
+
+          <!-- Second Column-->
+          <div class="column second">
+
+            <div class="row"> 
+              <label for="name">Middle Name (Gitnang Pangalan)</label>
+              <input type="text" name="name" value="" placeholder="">
+            </div>
+
+            <div class="row"> 
+              <label for="mobile">Mobile Number (Numero ng Mobile)</label>
+              <input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="0936-227-3537">
+            </div>
+
+            <div class="row"> 
+              <label for="birth_country">Birth Country (Lugar ng Kapanganakan)</label>
+              <select name="birth_country" form="">
+                <option value="Philippines" selected>Philippines</option>
+              </select>
+            </div>
+
+            <div id="space">
+              <P>Hidden</P>
+            </div>
+            
+            <div class=""> 
+              <label for="province">Province (Probinsya)</label>
+              <select name="province" >
+                <option value="Lanao Del Norte" selected>Lanao Del Norte</option>
+              </select>
+            </div>
+
+
+          </div>
+
+          <!-- Third Column-->
+          <div class="column third" id="">
+
+            <div class="row"> 
+              <label for="name">Last Name (Apelyido)</label>
+              <input type="text" name="name" value="" placeholder="">
+            </div>
+
+            <div class="row"> 
+              <label for="status">Marital Status</label>
+              <select name="status" form="">
+                <option value="saab">Single</option>
+                <option value="volvo">Married</option>
+                <option value="opel">Divorced</option>
+                <option value="audi">Widowed</option>
+              </select>
+            </div>
+
+            <div class="row"> 
+              <label for="birth_province">Birth Province(Probinsya ng Kapanganakan)</label>
+              <select name="birth_province" >
+                <option value="Lanao Del Norte" selected>Lanao Del Norte</option>
+              </select>
+            </div>
+
+            <div id="space">
+              <P>Hidden</P>
+            </div>
+
+            <div class=""> 
+              <label for="city_municipality">City/Municipality (Lungsod/Bayad)</label>
+              <select name="city_municipality" >
+                <option value="Iligan City" selected>Iligan City</option>
+              </select>
+            </div>
+          </div>  
+          
+          <!-- Fourth Column -->
+          <div class="column fourth">
+
+            <div class="row"> 
+              <label for="suffix">Suffix</label>
+              <input type="text" name="suffix" value="" placeholder="e.g Sr, II">
+            </div>
+
+            <div class="row"> 
+              <label for="blood_type">Blood Type (Uri ng Dugo)</label>
+              <select name="blood_type" form="">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="AB">AB</option>
+                <option value="O">O</option>
+              </select>
+            </div>
+
+            <div class="row"> 
+              <label for="birth_municipality">Birth City (Lungsod ng Kapanganakan)</label>
+              <select name="city_municipality" >
+                <option value="Iligan City" selected>Iligan City</option>
+              </select>
+            </div>
+
+            <div id="space">
+              <P>Hidden</P>
+            </div>
+          <!-- barangay_in_cities['Iligan City'] = ['Abuno', 'Acmac', 'Bagong Silang', 'Bonbonon', 'Bunawan', 'Buru-un', 'Dalipuga', 'Del Carmen', 'Digkilaan', 'Ditucalan', 'Dulag', 'Hinaplanon'
+          , 'Hindang', 'Kabacsanan', 'Kalilangan', 'Kiwalan', 'Lanipao', 'Luinab', 'Mahayahay', 'Mainit', 'Mandulog', 'Maria Cristina', 'Palao', 'Panoroganan', 'Poblacio', 'Puga-an'
+          , 'Rogongon', 'San Miguel', 'San Roque', 'Santa Elena', 'Santa Filomena', 'Santiago', 'Santo Rosario', 'Saray', 'Suarez', 'Tambacan', 'Tibanga', 'Tipanoy', 'Tomas L. Cabili',
+          'Tominobo Upper', 'Tominobo Lower', 'Tubod', 'Ubaldo Laya', 'Upper Hinaplanon', 'Villa Verde']; -->
+            <div class="row"> 
+              <label for="barangay">Barangay</label>
+              <select name="barangay" id="">
+                <option value="Abuno" selected>Abuno</option>
+                <option value="Acmac">Acmac</option>
+                <option value="Bagong Silang">Bagong Silang</option>
+                <option value="Bonbonon" >Bonbonon</option>
+                <option value="Abuno" >Bunawan</option>
+                <option value="Abuno" >Buru-un</option>
+                <option value="Abuno" >Dalipuga</option>
+                <option value="Abuno" >Del Carmen</option>
+                <option value="Abuno" >Digkilaan</option>
+                <option value="Abuno" >Ditucalan</option>
+                <option value="Abuno" >Dulag</option>
+                <option value="" >Hinaplanon</option>
+                <option value="" >Hindang</option>
+                <option value="" >Kabacsanan</option>
+                <option value="" >Kalilangan</option>
+                <option value="" >Kiwalan</option>
+                <option value="" >Lanipao</option>
+                <option value="" >Luinab</option>
+                <option value="" >Mahayahay</option>
+                <option value="" >Mainit</option>
+                <option value="" >Mandulog</option>
+                <option value="" >Maria Cristina</option>
+                <option value="" >Palao</option>
+                <option value="" >Panoroganan</option>
+                <option value="" >Poblacion</option>
+                <option value="" >Pugaan</option>
+                <option value="" >Rogongon</option>
+                <option value="" >San Miguel</option>
+                <option value="" >San Roque</option>
+                <option value="" >Santa Elena</option>
+                <option value="" >Santa Filomena</option>
+                <option value="" >Santiago</option>
+                <option value="" >Santa Rosario</option>
+                <option value="" >Saray</option>
+                <option value="" >Suarez</option>
+                <option value="" >Tambacan</option>
+                <option value="" >Tibanga</option>
+                <option value="" >Tipanoy</option>
+                <option value="" >Tomas L. Cabili</option>
+                <option value="" >Tominobo Upper</option>
+                <option value="" >Tominobo Lower</option>
+                <option value="" >Tubod</option>
+                <option value="" >Ubaldo Laya</option>
+                <option value="" >Upper Hinaplanon</option>
+                <option value="" >Villa Verde</option>
+
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <input type="submit" name="" id="">
+          </div>
+
+        </div>
+      </form>
+    </div>
+    
+  </body>
+</html>
